@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Blog — ContractorCalcTools | Home Improvement Tips & Guides</title>
+    <meta name="description" content="Expert tips on contractor calculations, home improvement projects, material estimates, and cost planning for DIYers and professionals.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.contractorcalctools.com/blog.html">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.contractorcalctools.com/blog.html">
+    <meta property="og:title" content="Blog — ContractorCalcTools">
+    <meta property="og:description" content="Expert tips on contractor calculations, home improvement projects, material estimates, and cost planning.">
+    <meta property="og:site_name" content="contractorcalctools">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.contractorcalctools.com/blog.html">
+    <meta name="twitter:title" content="Blog — ContractorCalcTools">
+    <meta name="twitter:description" content="Expert tips on contractor calculations and home improvement.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --color-primary: #1e3a5f;
+            --color-primary-dark: #152a45;
+            --color-primary-light: #2a4d7a;
+            --color-secondary: #f5a623;
+            --color-secondary-dark: #e0850a;
+            --color-text: #333333;
+            --color-text-light: #666666;
+            --color-text-muted: #999999;
+            --color-text-white: #ffffff;
+            --color-background: #ffffff;
+            --color-background-alt: #f8f9fa;
+            --color-border: #dee2e6;
+            --font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --font-family-heading: 'Poppins', var(--font-family-base);
+            --font-size-sm: 0.875rem;
+            --font-size-base: 1rem;
+            --font-size-lg: 1.125rem;
+            --font-size-xl: 1.25rem;
+            --font-size-2xl: 1.5rem;
+            --font-size-3xl: 1.875rem;
+            --font-size-4xl: 2.25rem;
+            --spacing-sm: 0.5rem;
+            --spacing-md: 1rem;
+            --spacing-lg: 1.5rem;
+            --spacing-xl: 2rem;
+            --spacing-2xl: 3rem;
+            --spacing-3xl: 4rem;
+            --spacing-4xl: 6rem;
+            --radius-md: 0.5rem;
+            --radius-lg: 0.75rem;
+            --radius-xl: 1rem;
+            --shadow-md: 0 4px 6px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.05);
+            --shadow-lg: 0 10px 15px rgba(0,0,0,0.1), 0 4px 6px rgba(0,0,0,0.05);
+            --transition-fast: 150ms ease;
+            --transition-base: 250ms ease;
+            --container-max-width: 1280px;
+            --container-padding: 1.5rem;
+            --header-height: 70px;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-family-base);
+            font-size: var(--font-size-base);
+            font-weight: 400;
+            line-height: 1.6;
+            color: var(--color-text);
+            background-color: var(--color-background-alt);
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-family-heading);
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--color-primary);
+        }
+
+        a {
+            color: var(--color-primary);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: var(--color-secondary);
+        }
+
+        .container {
+            width: 100%;
+            max-width: var(--container-max-width);
+            margin: 0 auto;
+            padding: 0 var(--container-padding);
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: var(--header-height);
+            background-color: var(--color-background);
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+            z-index: 1000;
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-family: var(--font-family-heading);
+            font-size: var(--font-size-xl);
+            font-weight: 800;
+            color: var(--color-primary);
+        }
+
+        .logo:hover {
+            color: var(--color-primary);
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-secondary-dark) 100%);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: var(--spacing-sm);
+            color: white;
+            font-weight: 700;
+            font-size: var(--font-size-lg);
+        }
+
+        .logo-text span {
+            color: var(--color-secondary);
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+        }
+
+        .nav-link {
+            padding: var(--spacing-sm) var(--spacing-md);
+            font-size: var(--font-size-sm);
+            font-weight: 500;
+            color: var(--color-text);
+            border-radius: var(--radius-md);
+            transition: all var(--transition-fast);
+        }
+
+        .nav-link:hover {
+            color: var(--color-primary);
+            background-color: var(--color-background-alt);
+        }
+
+        .header-cta {
+            display: inline-flex;
+            align-items: center;
+            padding: var(--spacing-sm) var(--spacing-lg);
+            font-size: var(--font-size-sm);
+            font-weight: 600;
+            color: var(--color-text-white);
+            background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-secondary-dark) 100%);
+            border-radius: 9999px;
+            transition: all var(--transition-fast);
+        }
+
+        .header-cta:hover {
+            color: var(--color-text-white);
+            transform: translateY(-1px);
+        }
+
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 44px;
+            height: 44px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .hamburger {
+            width: 24px;
+            height: 2px;
+            background-color: var(--color-text);
+            position: relative;
+        }
+
+        .hamburger::before, .hamburger::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--color-text);
+        }
+
+        .hamburger::before { top: -7px; }
+        .hamburger::after { bottom: -7px; }
+
+        .page-header {
+            padding-top: calc(var(--header-height) + var(--spacing-4xl));
+            padding-bottom: var(--spacing-3xl);
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+            text-align: center;
+        }
+
+        .page-header h1 {
+            color: var(--color-text-white);
+            font-size: var(--font-size-4xl);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .page-header p {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: var(--font-size-lg);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .blog-section {
+            padding: var(--spacing-4xl) 0;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: var(--spacing-xl);
+        }
+
+        .blog-card {
+            background-color: var(--color-background);
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: all var(--transition-base);
+        }
+
+        .blog-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .blog-card-image {
+            height: 200px;
+            background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-primary) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+        }
+
+        .blog-card-content {
+            padding: var(--spacing-xl);
+        }
+
+        .blog-card-category {
+            display: inline-block;
+            padding: var(--spacing-xs) var(--spacing-sm);
+            font-size: var(--font-size-sm);
+            font-weight: 600;
+            color: var(--color-secondary);
+            background-color: rgba(245, 166, 35, 0.1);
+            border-radius: var(--radius-md);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .blog-card-title {
+            font-size: var(--font-size-xl);
+            font-weight: 700;
+            color: var(--color-primary);
+            margin-bottom: var(--spacing-sm);
+            line-height: 1.3;
+        }
+
+        .blog-card-title a {
+            color: inherit;
+        }
+
+        .blog-card-title a:hover {
+            color: var(--color-secondary);
+        }
+
+        .blog-card-excerpt {
+            font-size: var(--font-size-sm);
+            color: var(--color-text-light);
+            margin-bottom: var(--spacing-md);
+            line-height: 1.6;
+        }
+
+        .blog-card-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: var(--spacing-md);
+            border-top: 1px solid var(--color-border);
+            font-size: var(--font-size-sm);
+            color: var(--color-text-muted);
+        }
+
+        .blog-card-date {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-xs);
+        }
+
+        .blog-card-read-time {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-xs);
+        }
+
+        .cta-section {
+            text-align: center;
+            padding: var(--spacing-4xl) 0;
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+        }
+
+        .cta-section h2 {
+            color: var(--color-text-white);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .cta-section p {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: var(--font-size-lg);
+            max-width: 600px;
+            margin: 0 auto var(--spacing-xl);
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: var(--spacing-md) var(--spacing-xl);
+            font-family: var(--font-family-base);
+            font-size: var(--font-size-base);
+            font-weight: 600;
+            text-decoration: none;
+            border: 2px solid transparent;
+            border-radius: var(--radius-lg);
+            cursor: pointer;
+            transition: all var(--transition-fast);
+        }
+
+        .btn-primary {
+            color: var(--color-text-white);
+            background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-secondary-dark) 100%);
+            border-color: var(--color-secondary);
+        }
+
+        .btn-primary:hover {
+            color: var(--color-text-white);
+            transform: translateY(-2px);
+        }
+
+        .footer {
+            background-color: var(--color-primary-dark);
+            color: rgba(255, 255, 255, 0.8);
+            padding-top: var(--spacing-4xl);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr repeat(3, 1fr);
+            gap: var(--spacing-2xl);
+            padding-bottom: var(--spacing-3xl);
+        }
+
+        .footer-brand {
+            max-width: 300px;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            font-family: var(--font-family-heading);
+            font-size: var(--font-size-xl);
+            font-weight: 700;
+            color: var(--color-text-white);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .footer-logo .logo-icon {
+            background: var(--color-secondary);
+            margin-right: var(--spacing-sm);
+        }
+
+        .footer-description {
+            font-size: var(--font-size-sm);
+            line-height: 1.7;
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .footer-column h4 {
+            font-size: var(--font-size-base);
+            font-weight: 600;
+            color: var(--color-text-white);
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .footer-links a {
+            font-size: var(--font-size-sm);
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .footer-links a:hover {
+            color: var(--color-secondary);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: var(--spacing-lg) 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: var(--spacing-md);
+        }
+
+        .footer-copyright {
+            font-size: var(--font-size-sm);
+            margin: 0;
+        }
+
+        .footer-legal {
+            display: flex;
+            gap: var(--spacing-lg);
+        }
+
+        .footer-legal a {
+            font-size: var(--font-size-sm);
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .footer-legal a:hover {
+            color: var(--color-secondary);
+        }
+
+        @media (max-width: 768px) {
+            .nav, .header-cta {
+                display: none;
+            }
+
+            .mobile-menu-toggle {
+                display: flex;
+            }
+
+            .page-header {
+                padding-top: calc(var(--header-height) + var(--spacing-2xl));
+                padding-bottom: var(--spacing-2xl);
+            }
+
+            .page-header h1 {
+                font-size: var(--font-size-2xl);
+            }
+
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a href="/" class="logo" aria-label="contractorcalctools Home">
+                <div class="logo-icon">CCT</div>
+                <div class="logo-text">Contractor<span>CalcTools</span></div>
+            </a>
+            
+            <nav class="nav">
+                <a href="calculators/concrete-calculator.html" class="nav-link">Calculators</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="privacy-policy.html" class="nav-link">Privacy</a>
+                <a href="terms-of-service.html" class="nav-link">Terms</a>
+                <a href="disclaimer.html" class="nav-link">Disclaimer</a>
+            </nav>
+            
+            <a href="index.html#calculators" class="header-cta">All Tools →</a>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>ContractorCalcTools Blog</h1>
+            <p>Expert tips, guides, and insights for home improvement projects, material calculations, and cost planning.</p>
+        </div>
+    </section>
+
+    <section class="blog-section">
+        <div class="container">
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-card-image">🧱</div>
+                    <div class="blog-card-content">
+                        <span class="blog-card-category">Concrete</span>
+                        <h2 class="blog-card-title">
+                            <a href="#">How to Calculate Concrete for Your Project</a>
+                        </h2>
+                        <p class="blog-card-excerpt">Learn how to accurately estimate concrete quantities for slabs, footings, and foundations. Avoid waste and save money with proper calculations.</p>
+                        <div class="blog-card-meta">
+                            <span class="blog-card-date">📅 April 10, 2026</span>
+                            <span class="blog-card-read-time">⏱️ 5 min read</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-card-image">🎨</div>
+                    <div class="blog-card-content">
+                        <span class="blog-card-category">Painting</span>
+                        <h2 class="blog-card-title">
+                            <a href="#">Paint Calculator: How Much Paint Do You Really Need?</a>
+                        </h2>
+                        <p class="blog-card-excerpt">Stop buying too much paint or running out mid-project. Our guide teaches you how to calculate paint quantities for any room size.</p>
+                        <div class="blog-card-meta">
+                            <span class="blog-card-date">📅 April 8, 2026</span>
+                            <span class="blog-card-read-time">⏱️ 4 min read</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-card-image">🏠</div>
+                    <div class="blog-card-content">
+                        <span class="blog-card-category">Roofing</span>
+                        <h2 class="blog-card-title">
+                            <a href="#">Roofing Calculator: Materials & Cost Breakdown</a>
+                        </h2>
+                        <p class="blog-card-excerpt">Planning a new roof? Understand the costs of shingles, underlayment, and labor with our comprehensive roofing guide.</p>
+                        <div class="blog-card-meta">
+                            <span class="blog-card-date">📅 April 5, 2026</span>
+                            <span class="blog-card-read-time">⏱️ 6 min read</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-card-image">🍳</div>
+                    <div class="blog-card-content">
+                        <span class="blog-card-category">Remodeling</span>
+                        <h2 class="blog-card-title">
+                            <a href="#">Kitchen Remodel Costs: What to Expect in 2026</a>
+                        </h2>
+                        <p class="blog-card-excerpt">From cabinets to countertops, learn what's driving kitchen remodel costs and how to budget for your dream kitchen.</p>
+                        <div class="blog-card-meta">
+                            <span class="blog-card-date">📅 April 2, 2026</span>
+                            <span class="blog-card-read-time">⏱️ 7 min read</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-card-image">🌡️</div>
+                    <div class="blog-card-content">
+                        <span class="blog-card-category">HVAC</span>
+                        <h2 class="blog-card-title">
+                            <a href="#">AC Sizing Guide: Choose the Right Unit for Your Home</a>
+                        </h2>
+                        <p class="blog-card-excerpt">Proper AC sizing impacts comfort and energy bills. Learn how BTU ratings work and select the perfect cooling solution.</p>
+                        <div class="blog-card-meta">
+                            <span class="blog-card-date">📅 March 28, 2026</span>
+                            <span class="blog-card-read-time">⏱️ 5 min read</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-card-image">🪵</div>
+                    <div class="blog-card-content">
+                        <span class="blog-card-category">Flooring</span>
+                        <h2 class="blog-card-title">
+                            <a href="#">Flooring Calculator: Carpet, Hardwood & Tile Estimates</a>
+                        </h2>
+                        <p class="blog-card-excerpt">Get accurate flooring material estimates for your project. Includes waste factor calculations and cost breakdowns.</p>
+                        <div class="blog-card-meta">
+                            <span class="blog-card-date">📅 March 25, 2026</span>
+                            <span class="blog-card-read-time">⏱️ 4 min read</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Start Your Project?</h2>
+            <p>Use our free calculators to plan your next home improvement project. Get accurate estimates for materials and costs.</p>
+            <a href="index.html#calculators" class="btn btn-primary">Browse All Calculators</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-icon">CCT</div>
+                        <span>Contractor<span>CalcTools</span></span>
+                    </div>
+                    <p class="footer-description">Free professional-grade contractor calculators for concrete, roofing, flooring, paint, and more. Accurate estimates for DIYers and pros.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Calculators</h4>
+                    <ul class="footer-links">
+                        <li><a href="calculators/concrete-calculator.html">Concrete Calculator</a></li>
+                        <li><a href="calculators/roofing-calculator.html">Roofing Calculator</a></li>
+                        <li><a href="calculators/flooring-calculator.html">Flooring Calculator</a></li>
+                        <li><a href="calculators/paint-calculator.html">Paint Calculator</a></li>
+                        <li><a href="calculators/kitchen-remodel-calculator.html">Kitchen Remodel</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="disclaimer.html">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2026 ContractorCalcTools. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="privacy-policy.html">Privacy</a>
+                    <a href="terms-of-service.html">Terms</a>
+                    <a href="disclaimer.html">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

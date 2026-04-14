@@ -1,0 +1,12 @@
+# robots.txt for contractorcalctools.com
+# https://www.contractorcalctools.com/
+
+User-agent: *
+Allow: /
+
+# Disallow private/admin areas (if any)
+Disallow: /cgi-bin/
+Disallow: /private/
+
+# Sitemap
+Sitemap: https://www.contractorcalctools.com/sitemap.xml
